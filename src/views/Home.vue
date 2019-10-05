@@ -1,5 +1,10 @@
 <template>
-  <HelloWorld />
+  <v-app>
+    <m-k-top-bar></m-k-top-bar>
+    <v-content>
+      <HelloWorld />
+    </v-content>
+  </v-app>
 </template>
 
 <script lang="ts">
