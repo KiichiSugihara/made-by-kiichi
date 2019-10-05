@@ -3,7 +3,7 @@
     <v-app-bar color="deep-purple accent-4" dark>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <router-link :to="{ name: 'home'}">
-        <v-toolbar-title>Made-by-Kiichi</v-toolbar-title>
+        <v-toolbar-title class="title-button">Made-by-Kiichi</v-toolbar-title>
       </router-link>
 
       <div class="flex-grow-1"></div>
@@ -37,3 +37,10 @@ import Vue from "vue";
 
 export default Vue.extend({});
 </script>
+
+<style lang="scss" scoped>
+.title-button {
+  color: aliceblue;
+  text-decoration: none;
+}
+</style>>
