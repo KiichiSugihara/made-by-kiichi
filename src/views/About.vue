@@ -8,12 +8,12 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import MKTopBar from "@/components/MKTopBar.vue";
+import MKTopBar from '@/components/MKTopBar.vue'
+import Vue from 'vue'
 
 export default Vue.extend({
-  components: {
-    MKTopBar
-  }
-});
+    components: {
+        MKTopBar,
+    },
+})
 </script>

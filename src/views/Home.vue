@@ -8,16 +8,16 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import HelloWorld from "../components/HelloWorld.vue";
-import MKTopBar from "@/components/MKTopBar.vue";
-import MKBackgroundImage from "@/components/MKBackgroundImage.vue";
+import MKBackgroundImage from '@/components/MKBackgroundImage.vue'
+import MKTopBar from '@/components/MKTopBar.vue'
+import Vue from 'vue'
+import HelloWorld from '../components/HelloWorld.vue'
 
 export default Vue.extend({
-  components: {
-    HelloWorld,
-    MKTopBar,
-    MKBackgroundImage
-  }
-});
+    components: {
+        HelloWorld,
+        MKTopBar,
+        MKBackgroundImage,
+    },
+})
 </script>
