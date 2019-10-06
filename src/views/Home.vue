@@ -14,10 +14,10 @@ import Vue from 'vue'
 import HelloWorld from '../components/HelloWorld.vue'
 
 export default Vue.extend({
-    components: {
-        HelloWorld,
-        MKTopBar,
-        MKBackgroundImage,
-    },
+  components: {
+    HelloWorld,
+    MKTopBar,
+    MKBackgroundImage,
+  },
 })
 </script>
