@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <m-k-top-bar></m-k-top-bar>
-    <v-content>
-      <m-k-background-image></m-k-background-image>
+    <v-content class="content">
+      <!-- <m-k-background-image></m-k-background-image> -->
     </v-content>
   </v-app>
 </template>
@@ -14,10 +14,16 @@ import Vue from 'vue'
 import HelloWorld from '../components/HelloWorld.vue'
 
 export default Vue.extend({
-    components: {
-        HelloWorld,
-        MKTopBar,
-        MKBackgroundImage,
-    },
+  components: {
+    HelloWorld,
+    MKTopBar,
+    MKBackgroundImage,
+  },
 })
 </script>
+<style lang="scss" scoped>
+.content{
+  background-color: #ee5050;
+}
+
+</style>>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar color="deep-purple accent-4" dark>
+    <v-app-bar :color="barColor" dark>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <router-link :to="{ name: 'home'}">
         <v-toolbar-title class="title-button">Made-by-Kiichi</v-toolbar-title>
@@ -35,12 +35,17 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  data: () => ({
+    barColor: '#ee5050',
+  }),
+})
 </script>
 
 <style lang="scss" scoped>
 .title-button {
   color: aliceblue;
-  text-decoration: none;
 }
+// https://stackoverflow.com/questions/44808474/vue-router-how-to-remove-underline-from-router-link/56443074#56443074
+a {  text-decoration: none;}
 </style>>
