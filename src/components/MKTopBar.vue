@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar :color="barColor" dark>
+    <v-app-bar :color="barColor" :flat='flat' dark >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <router-link :to="{ name: 'home'}">
         <v-toolbar-title class="title-button">Made-by-Kiichi</v-toolbar-title>
@@ -38,11 +38,13 @@ import Vue from 'vue'
 export default Vue.extend({
   data: () => ({
     barColor: '#ee5050',
+    flat:true,
   }),
 })
 </script>
 
 <style lang="scss" scoped>
+
 .title-button {
   color: aliceblue;
 }
