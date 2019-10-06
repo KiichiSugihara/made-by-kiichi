@@ -11,11 +11,9 @@
 import MKBackgroundImage from '@/components/MKBackgroundImage.vue'
 import MKTopBar from '@/components/MKTopBar.vue'
 import Vue from 'vue'
-import HelloWorld from '../components/HelloWorld.vue'
 
 export default Vue.extend({
   components: {
-    HelloWorld,
     MKTopBar,
     MKBackgroundImage,
   },
@@ -23,7 +21,7 @@ export default Vue.extend({
 </script>
 <style lang="scss" scoped>
 .content{
-  background-color: #ee5050;
+  background-color: #F6EFE4;
 }
 
 </style>>
