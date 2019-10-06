@@ -45,6 +45,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .title-button {
   color: aliceblue;
-  text-decoration: none;
 }
+// https://stackoverflow.com/questions/44808474/vue-router-how-to-remove-underline-from-router-link/56443074#56443074
+a {  text-decoration: none;}
 </style>>
