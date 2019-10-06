@@ -6,12 +6,12 @@
       </router-link>
 
       <div class="flex-grow-1"></div>
-       <router-link :to="{ name: 'home'}">
+       <router-link :to="{ name: 'act'}">
         <v-toolbar-title class="nav-button">Act</v-toolbar-title>
       </router-link>
-       <router-link :to="{ name: 'home'}">
+       <router-link :to="{ name: 'who'}">
         <v-toolbar-title class="nav-button">Who</v-toolbar-title>
-      </router-link> <router-link :to="{ name: 'home'}">
+      </router-link> <router-link :to="{ name: 'contact'}">
         <v-toolbar-title class="nav-button">Contact
         </v-toolbar-title>
       </router-link>
