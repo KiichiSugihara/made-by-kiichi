@@ -8,6 +8,8 @@
 import MKTopBar from '@/components/MKTopBar.vue'
 import Vue from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
+import '@/styles/global.css'
+
 
 export default Vue.extend({
     name: 'App',
