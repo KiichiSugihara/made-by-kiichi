@@ -8,14 +8,12 @@
 </template>
 
 <script lang="ts">
-import MKBackgroundImage from '@/components/MKBackgroundImage.vue'
 import MKTopBar from '@/components/MKTopBar.vue'
 import Vue from 'vue'
 
 export default Vue.extend({
   components: {
     MKTopBar,
-    MKBackgroundImage,
   },
 })
 </script>
@@ -24,4 +22,4 @@ export default Vue.extend({
   background-color: #F6EFE4;
 }
 
-</style>>
+</style>
