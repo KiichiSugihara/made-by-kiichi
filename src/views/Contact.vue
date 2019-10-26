@@ -2,21 +2,21 @@
   <v-app>
     <m-k-top-bar></m-k-top-bar>
     <v-content class="content">
-      <!-- <m-k-background-image></m-k-background-image> -->
+      <h1>Contact</h1>
     </v-content>
   </v-app>
 </template>
-
 <script lang="ts">
 import MKTopBar from '@/components/MKTopBar.vue'
 import Vue from 'vue'
 
 export default Vue.extend({
-  components: {
-    MKTopBar,
-  },
+    components: {
+        MKTopBar,
+    },
 })
 </script>
+
 <style lang="scss" scoped>
 .content{
   background-color: #F6EFE4;

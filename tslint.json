@@ -1,7 +1,9 @@
 {
   "defaultSeverity": "warning",
   "extends": [
-    "tslint:recommended"
+    "tslint:recommended",
+    // "tslint-config-airbnb",
+    "tslint-config-prettier"
   ],
   "linterOptions": {
     "exclude": [
@@ -9,11 +11,15 @@
     ]
   },
   "rules": {
-    "indent": [true, "spaces", 2],
-    "interface-name": false,
-    "no-consecutive-blank-lines": false,
-    "object-literal-sort-keys": false,
-    "ordered-imports": false,
-    "quotemark": [true, "single"]
-  }
+    "prettier": true,
+    // "indent": [true, "spaces", 2],
+    // "interface-name": false,
+    // "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false
+    // "ordered-imports": false,
+    // "quotemark": [true, "single"]
+  },
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ]
 }
