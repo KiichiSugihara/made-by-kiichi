@@ -1,10 +1,10 @@
 <template>
-  <v-app>
-    <m-k-top-bar></m-k-top-bar>
-    <v-content class="content">
-      <h1>Contact</h1>
-    </v-content>
-  </v-app>
+    <v-app>
+        <m-k-top-bar></m-k-top-bar>
+        <v-content class="content">
+            <h1>Contact</h1>
+        </v-content>
+    </v-app>
 </template>
 <script lang="ts">
 import MKTopBar from '@/components/MKTopBar.vue'
@@ -18,8 +18,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.content{
-  background-color: #F6EFE4;
+.content {
+    background-color: #fdce12;
 }
-
 </style>
