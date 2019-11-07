@@ -1,10 +1,10 @@
 <template>
-  <v-app>
-    <m-k-top-bar></m-k-top-bar>
-    <v-content class="content">
-      <!-- <m-k-background-image></m-k-background-image> -->
-    </v-content>
-  </v-app>
+    <v-app>
+        <m-k-top-bar></m-k-top-bar>
+        <v-content class="content">
+            <!-- <m-k-background-image></m-k-background-image> -->
+        </v-content>
+    </v-app>
 </template>
 
 <script lang="ts">
@@ -12,14 +12,13 @@ import MKTopBar from '@/components/MKTopBar.vue'
 import Vue from 'vue'
 
 export default Vue.extend({
-  components: {
-    MKTopBar,
-  },
+    components: {
+        MKTopBar,
+    },
 })
 </script>
 <style lang="scss" scoped>
-.content{
-  background-color: #F6EFE4;
+.content {
+    background-color: #fdce12;
 }
-
 </style>
