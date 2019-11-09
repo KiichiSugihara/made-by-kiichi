@@ -25,7 +25,7 @@ export default Vue.extend({})
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 .mk-card-container {
-    background-color: #fdce12;
+    background-color: #5acd7d;
     max-width: 344px;
     height: 18rem;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 18px 0px;

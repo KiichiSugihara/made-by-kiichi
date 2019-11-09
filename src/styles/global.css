@@ -1,3 +1,24 @@
 html {
-    background-color: #fdce12;
+    background-color: #5acd7d;
 }
+
+/* Color Theme Swatches in Hex */
+$Green-Red-1-hex: #46a188;
+$Green-Red-2-hex: #5acd7d;
+$Green-Red-3-hex: #fef2d8;
+$Green-Red-4-hex: #f18c79;
+$Green-Red-5-hex: #ef504f;
+
+/* Color Theme Swatches in RGBA */
+$Green-Red-1-rgba: rgba(70, 161, 135, 1);
+$Green-Red-2-rgba: rgba(89, 205, 124, 1);
+$Green-Red-3-rgba: rgba(253, 242, 216, 1);
+$Green-Red-4-rgba: rgba(240, 140, 121, 1);
+$Green-Red-5-rgba: rgba(239, 80, 79, 1);
+
+/* Color Theme Swatches in HSLA */
+$Green-Red-1-hsla: hsla(163, 39, 45, 1);
+$Green-Red-2-hsla: hsla(138, 53, 57, 1);
+$Green-Red-3-hsla: hsla(41, 94, 92, 1);
+$Green-Red-4-hsla: hsla(9, 81, 70, 1);
+$Green-Red-5-hsla: hsla(0, 83, 62, 1);
