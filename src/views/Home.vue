@@ -10,18 +10,25 @@
                     </h1>
                 </div>
             </div>
-            <!-- <m-k-background-image></m-k-background-image> -->
+            <div class="act-container">
+                Act
+                <m-k-card></m-k-card>
+                <m-k-card></m-k-card>
+            </div>
+            <div class="career-container">Creer</div>
         </v-content>
     </v-app>
 </template>
 
 <script lang="ts">
 import MKTopBar from '@/components/MKTopBar.vue'
+import MKCard from '@/components/MKCard.vue'
 import Vue from 'vue'
 
 export default Vue.extend({
     components: {
         MKTopBar,
+        MKCard,
     },
 })
 </script>
