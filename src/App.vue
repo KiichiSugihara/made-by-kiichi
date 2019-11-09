@@ -5,16 +5,13 @@
 </template>
 
 <script lang="ts">
-
 import Vue from 'vue'
 
 import '@/styles/global.css'
 
-
 export default Vue.extend({
     name: 'App',
-    components: {
-    },
+    components: {},
     data: () => ({
         //
     }),

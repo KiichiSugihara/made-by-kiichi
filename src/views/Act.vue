@@ -9,8 +9,8 @@
     </v-app>
 </template>
 <script lang="ts">
-import MKTopBar from '@/components/MKTopBar.vue'
 import MKCard from '@/components/MKCard.vue'
+import MKTopBar from '@/components/MKTopBar.vue'
 import Vue from 'vue'
 
 export default Vue.extend({
