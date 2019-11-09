@@ -1,6 +1,8 @@
 <template>
     <v-app>
-        <m-k-top-bar></m-k-top-bar>
+        <div class="header-container">
+            <m-k-top-bar></m-k-top-bar>
+        </div>
         <v-content class="content">
             <div class="home-title-container">
                 <div class="home-title-box">
@@ -34,6 +36,11 @@ export default Vue.extend({
 </script>
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.header-container {
+    padding: 4rem 0px;
+    background-color: #fdce12;
+}
 
 .home-title-container {
     // display: flex;
