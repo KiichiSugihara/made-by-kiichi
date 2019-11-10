@@ -24,7 +24,7 @@ import Vue from 'vue'
 
 export default Vue.extend({
     data: () => ({
-        barColor: '#5ACD7D',
+        barColor: '#EF504F',
         flat: true,
     }),
 })
@@ -35,7 +35,7 @@ export default Vue.extend({
 
 .title-button {
     font-family: 'Mansalva', cursive;
-    color: #4b4b4b;
+    color: #ffffff;
 }
 // https://stackoverflow.com/questions/44808474/vue-router-how-to-remove-underline-from-router-link/56443074#56443074
 a {
@@ -43,7 +43,7 @@ a {
 }
 
 .nav-button {
-    color: #4b4b4b;
+    color: #ffffff;
     font-family: 'Mansalva', cursive;
     display: block;
     line-height: 1.6rem;

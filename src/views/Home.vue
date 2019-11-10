@@ -39,7 +39,7 @@ export default Vue.extend({
 
 .header-container {
     padding: 4rem 0px;
-    background-color: #5acd7d;
+    background-color: #ef504f;
 }
 
 .home-title-container {
@@ -56,7 +56,7 @@ export default Vue.extend({
 }
 .home-title-text {
     font-family: 'Josefin Sans', sans-serif;
-    color: #4b4b4b;
+    color: #ffffff;
     font-size: 2.6rem;
     font-weight: 700;
     line-height: 4rem;
@@ -66,6 +66,6 @@ export default Vue.extend({
     margin-inline-end: 0px;
 }
 .content {
-    background-color: #5acd7d;
+    background-color: #ef504f;
 }
 </style>
