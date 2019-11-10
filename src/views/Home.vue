@@ -12,12 +12,15 @@
                     </h1>
                 </div>
             </div>
+            <div class="career-container">
+                Career
+                <m-k-timeline></m-k-timeline>
+            </div>
             <div class="act-container">
                 Act
                 <m-k-card></m-k-card>
                 <m-k-card></m-k-card>
             </div>
-            <div class="career-container">Creer</div>
         </v-content>
     </v-app>
 </template>
@@ -25,12 +28,14 @@
 <script lang="ts">
 import MKTopBar from '@/components/MKTopBar.vue'
 import MKCard from '@/components/MKCard.vue'
+import MKTimeline from '@/components/MKTimeline.vue'
 import Vue from 'vue'
 
 export default Vue.extend({
     components: {
         MKTopBar,
         MKCard,
+        MKTimeline,
     },
 })
 </script>
