@@ -27,9 +27,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import MKTopBar from '@/components/MKTopBar.vue'
 import MKCard from '@/components/MKCard.vue'
 import MKTimeline from '@/components/MKTimeline.vue'
+import MKTopBar from '@/components/MKTopBar.vue'
 
 @Component({
     components: {

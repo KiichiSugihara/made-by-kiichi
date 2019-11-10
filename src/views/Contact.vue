@@ -7,14 +7,19 @@
     </v-app>
 </template>
 <script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
 import MKTopBar from '@/components/MKTopBar.vue'
-import Vue from 'vue'
+import MKCard from '@/components/MKCard.vue'
+import MKTimeline from '@/components/MKTimeline.vue'
 
-export default Vue.extend({
+@Component({
     components: {
         MKTopBar,
+        MKCard,
+        MKTimeline,
     },
 })
+export default class Contact extends Vue {}
 </script>
 
 <style lang="scss" scoped>
