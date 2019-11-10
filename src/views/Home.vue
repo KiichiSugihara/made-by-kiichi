@@ -7,32 +7,41 @@
             <div class="home-title-container">
                 <div class="home-title-box">
                     <h1 class="home-title-text">
-                        <div>Kiichi Sugihara</div>
-                        <div>made-by-kichi</div>
+                        <div>{{homeTitle}}</div>
+                        <div>{{homeSubTitle}}</div>
                     </h1>
                 </div>
+            </div>
+            <div class="career-container">
+                Career
+                <m-k-timeline></m-k-timeline>
             </div>
             <div class="act-container">
                 Act
                 <m-k-card></m-k-card>
                 <m-k-card></m-k-card>
             </div>
-            <div class="career-container">Creer</div>
         </v-content>
     </v-app>
 </template>
 
 <script lang="ts">
-import MKTopBar from '@/components/MKTopBar.vue'
+import { Component, Vue } from 'vue-property-decorator'
 import MKCard from '@/components/MKCard.vue'
-import Vue from 'vue'
+import MKTimeline from '@/components/MKTimeline.vue'
+import MKTopBar from '@/components/MKTopBar.vue'
 
-export default Vue.extend({
+@Component({
     components: {
         MKTopBar,
         MKCard,
+        MKTimeline,
     },
 })
+export default class Home extends Vue {
+    homeTitle: string = 'Kiichi Sugihara'
+    homeSubTitle: string = "Solve anyone's problem & fullfill my curiosity"
+}
 </script>
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
