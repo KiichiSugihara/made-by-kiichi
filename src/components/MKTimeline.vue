@@ -23,39 +23,38 @@
     </v-timeline>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import { Component, Prop, Vue } from 'vue-property-decorator'
 
-export default Vue.extend({
-    data: () => ({
-        right: true,
-        times: [
-            {
-                color: 'white',
-                time: '2019/09',
-                title: 'Now',
-            },
-            {
-                color: 'white',
-                time: '2019/09',
-                title: 'Consensus Base.inc ',
-                subTitle: 'Blockchain Engineer',
-                text:
-                    'Work:Development of Blockchain Application using Solidity,Truffle,Node.js,Azure,etc ',
-                subText: '',
-            },
-            {
-                color: 'white',
-                time: '2019/04',
-                title: 'Oro.inc',
-                subTitle: 'Front-end Engineer',
-                text:
-                    'Work: UI / UX design and development of web front end for mobile mainly using Vue.js,TypeScript.',
-                subText:
-                    'Function: Approve , Expense settlement , Calendar , Attendance ,Profile,etc.',
-            },
-        ],
-    }),
-})
+@Component
+export default class MKTimeline extends Vue {
+    right = true
+    times = [
+        {
+            color: 'white',
+            time: '2019/09',
+            title: 'Now',
+        },
+        {
+            color: 'white',
+            time: '2019/09',
+            title: 'Consensus Base.inc ',
+            subTitle: 'Blockchain Engineer',
+            text:
+                'Work:Development of Blockchain Application using Solidity,Truffle,Node.js,Azure,etc ',
+            subText: '',
+        },
+        {
+            color: 'white',
+            time: '2019/04',
+            title: 'Oro.inc',
+            subTitle: 'Front-end Engineer',
+            text:
+                'Work: UI / UX design and development of web front end for mobile mainly using Vue.js,TypeScript.',
+            subText:
+                'Function: Approve , Expense settlement , Calendar , Attendance ,Profile,etc.',
+        },
+    ]
+}
 </script>
 
 <style lang="scss" scoped>

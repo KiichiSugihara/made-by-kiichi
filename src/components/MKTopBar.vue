@@ -20,14 +20,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { Component, Prop, Vue } from 'vue-property-decorator'
 
-export default Vue.extend({
-    data: () => ({
-        barColor: '#EF504F',
-        flat: true,
-    }),
-})
+@Component
+export default class MKTopBar extends Vue {
+    barColor = '#EF504F'
+    flat = true
+}
 </script>
 
 <style lang="scss" scoped>
