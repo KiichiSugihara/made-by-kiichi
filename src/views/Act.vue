@@ -9,8 +9,8 @@
     </v-app>
 </template>
 <script lang="ts">
-import MKTopBar from '@/components/MKTopBar.vue'
 import MKCard from '@/components/MKCard.vue'
+import MKTopBar from '@/components/MKTopBar.vue'
 import Vue from 'vue'
 
 export default Vue.extend({
@@ -23,6 +23,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .content {
-    background-color: #fdce12;
+    background-color: #ef504f;
 }
 </style>

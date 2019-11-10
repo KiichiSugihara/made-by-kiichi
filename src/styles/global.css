@@ -1,3 +1,18 @@
 html {
-    background-color: #fdce12;
+    background-color: #ef504f;
+}
+body,
+button,
+input,
+select,
+div,
+textarea,
+span,
+button,
+p {
+    color: #fff;
+    fill: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: circular web, sans-serif;
 }
