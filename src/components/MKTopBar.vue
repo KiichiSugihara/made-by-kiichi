@@ -1,6 +1,13 @@
 <template>
     <div>
-        <v-app-bar :color="barColor" :flat="flat" dark>
+        <v-app-bar
+            :color="barColor"
+            :flat="flat"
+            dark
+            :elevate-on-scroll="elevateOnScroll"
+            :shrink-on-scroll="shrinkOnScroll"
+            class="m-k-top-bar-header"
+        >
             <router-link :to="{ name: 'home'}">
                 <v-toolbar-title class="title-button">Made by Kiichi</v-toolbar-title>
             </router-link>
@@ -26,6 +33,8 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 export default class MKTopBar extends Vue {
     barColor = '#EF504F'
     flat = true
+    elevateOnScroll = true
+    shrinkOnScroll = true
 }
 </script>
 
@@ -41,6 +50,18 @@ a {
     text-decoration: none;
 }
 
+.m-k-top-bar-header {
+    position: fixed;
+    top: 0;
+    padding: 2.5rem 1.1rem 0 0;
+    z-index: 100;
+}
+.huga {
+    display: block;
+    margin-left: auto;
+    text-align: right;
+}
+
 .nav-button {
     color: #ffffff;
     font-family: 'Mansalva', cursive;
@@ -48,7 +69,8 @@ a {
     line-height: 1.6rem;
     font-weight: 700;
     outline: none !important;
-    padding: 0.4rem;
+    background-color: #ef504f;
+    padding: 0.675rem 0.8rem;
     position: relative;
     transition: color 0.25s cubic-bezier(0.625, 0.125, 0.305, 0.875),
         opacity 0.25s cubic-bezier(0.625, 0.125, 0.305, 0.875);
