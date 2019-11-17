@@ -1,20 +1,23 @@
 <template>
     <v-app class="page">
         <m-k-top-bar></m-k-top-bar>
-        <v-content class="content">
-            <div class="home-title-container">
-                <div class="home-title-box">
-                    <h1 class="home-title-text">
-                        <div>{{homeTitle}}</div>
-                        <div>{{homeSubTitle}}</div>
-                    </h1>
+        <v-content
+            ><div class="content">
+                <div class="home-title-container">
+                    <div class="home-title-box">
+                        <h1 class="home-title-text">
+                            <div>{{ homeTitle }}</div>
+                            <div>{{ homeSubTitle }}</div>
+                        </h1>
+                    </div>
+                </div>
+                <div class="career-container">
+                    Career
+                    <m-k-timeline></m-k-timeline>
                 </div>
             </div>
-            <div class="career-container">
-                Career
-                <m-k-timeline></m-k-timeline>
-            </div>
         </v-content>
+        <m-k-footer></m-k-footer>
     </v-app>
 </template>
 
@@ -23,12 +26,14 @@ import { Component, Vue } from 'vue-property-decorator'
 import MKCard from '@/components/MKCard.vue'
 import MKTimeline from '@/components/MKTimeline.vue'
 import MKTopBar from '@/components/MKTopBar.vue'
+import MKFooter from '@/components/MKFooter.vue'
 
 @Component({
     components: {
         MKTopBar,
         MKCard,
         MKTimeline,
+        MKFooter,
     },
 })
 export default class Home extends Vue {
@@ -69,5 +74,6 @@ export default class Home extends Vue {
 }
 .content {
     background-color: #ef504f;
+    padding: 8rem 0px;
 }
 </style>
