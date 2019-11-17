@@ -56,11 +56,6 @@ a {
     padding: 2.5rem 1.1rem 0 0;
     z-index: 100;
 }
-.huga {
-    display: block;
-    margin-left: auto;
-    text-align: right;
-}
 
 .nav-button {
     color: #ffffff;
