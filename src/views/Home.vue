@@ -1,8 +1,6 @@
 <template>
     <v-app class="page">
-        <div class="header-container">
-            <m-k-top-bar></m-k-top-bar>
-        </div>
+        <m-k-top-bar></m-k-top-bar>
         <v-content class="content">
             <div class="home-title-container">
                 <div class="home-title-box">
@@ -15,11 +13,6 @@
             <div class="career-container">
                 Career
                 <m-k-timeline></m-k-timeline>
-            </div>
-            <div class="act-container">
-                Act
-                <m-k-card></m-k-card>
-                <m-k-card></m-k-card>
             </div>
         </v-content>
     </v-app>
@@ -49,11 +42,6 @@ export default class Home extends Vue {
 .page {
     background-color: #ef504f;
     padding: 0 8px;
-}
-
-.header-container {
-    padding: 4rem 0px;
-    background-color: #ef504f;
 }
 
 .home-title-container {

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="header-container">
         <v-app-bar
             :color="barColor"
             :flat="flat"
@@ -48,6 +48,12 @@ export default class MKTopBar extends Vue {
 // https://stackoverflow.com/questions/44808474/vue-router-how-to-remove-underline-from-router-link/56443074#56443074
 a {
     text-decoration: none;
+}
+
+.header-container {
+    padding: 4rem 0px;
+    background-color: #ef504f;
+    z-index: 100;
 }
 
 .m-k-top-bar-header {
