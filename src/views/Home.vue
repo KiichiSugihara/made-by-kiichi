@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app class="page">
         <div class="header-container">
             <m-k-top-bar></m-k-top-bar>
         </div>
@@ -45,6 +45,11 @@ export default class Home extends Vue {
 </script>
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.page {
+    background-color: #ef504f;
+    padding: 0 8px;
+}
 
 .header-container {
     padding: 4rem 0px;
