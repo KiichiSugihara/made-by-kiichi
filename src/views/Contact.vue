@@ -3,6 +3,7 @@
         <m-k-top-bar></m-k-top-bar>
         <v-content class="content">
             <h1>Contact</h1>
+            <h2>Go to Google Sheet!</h2>
         </v-content>
     </v-app>
 </template>

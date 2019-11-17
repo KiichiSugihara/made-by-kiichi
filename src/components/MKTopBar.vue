@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="header-container">
         <v-app-bar
             :color="barColor"
             :flat="flat"
@@ -50,16 +50,17 @@ a {
     text-decoration: none;
 }
 
+.header-container {
+    padding: 4rem 0px;
+    background-color: #ef504f;
+    z-index: 100;
+}
+
 .m-k-top-bar-header {
     position: fixed;
     top: 0;
     padding: 2.5rem 1.1rem 0 0;
     z-index: 100;
-}
-.huga {
-    display: block;
-    margin-left: auto;
-    text-align: right;
 }
 
 .nav-button {

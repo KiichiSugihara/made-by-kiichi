@@ -2,7 +2,13 @@
     <v-app>
         <m-k-top-bar></m-k-top-bar>
         <v-content class="content">
-            <h1>Act</h1>
+            <m-k-card></m-k-card>
+            <m-k-card></m-k-card>
+            <m-k-card></m-k-card>
+            <m-k-card></m-k-card>
+            <m-k-card></m-k-card>
+            <m-k-card></m-k-card>
+            <m-k-card></m-k-card>
             <m-k-card></m-k-card>
             <m-k-card></m-k-card>
         </v-content>
