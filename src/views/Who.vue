@@ -1,7 +1,7 @@
 <template>
     <v-app>
-        <m-k-top-bar></m-k-top-bar>
-        <v-content class="content">
+        <m-k-top-bar :mainColor="this.pageMainColor"></m-k-top-bar>
+        <v-content class="content" :style="{'--color': this.pageMainColor}">
             <div class="career-container"></div>
             <m-k-git-hub></m-k-git-hub>
         </v-content>
@@ -20,11 +20,13 @@ import MKGitHub from '@/components/MKGitHub.vue'
         MKGitHub,
     },
 })
-export default class Who extends Vue {}
+export default class Who extends Vue {
+    pageMainColor: String = '#5acd7d'
+}
 </script>
 
 <style lang="scss" scoped>
 .content {
-    background-color: #5acd7d;
+    background-color: var(--color);
 }
 </style>
