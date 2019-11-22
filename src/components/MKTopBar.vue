@@ -1,7 +1,7 @@
 <template>
-    <div class="header-container">
+    <div class="header-container" :style="{'--color': this.mainColor}">
         <v-app-bar
-            :color="barColor"
+            :color="mainColor"
             :flat="flat"
             dark
             :elevate-on-scroll="elevateOnScroll"
@@ -31,10 +31,12 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
 export default class MKTopBar extends Vue {
-    barColor = '#EF504F'
     flat = true
     elevateOnScroll = true
     shrinkOnScroll = true
+
+    @Prop({ default: '#ef504f' })
+    mainColor!: String
 }
 </script>
 
@@ -52,7 +54,7 @@ a {
 
 .header-container {
     padding: 4rem 0px;
-    background-color: #ef504f;
+    background-color: var(--color);
     z-index: 100;
 }
 
@@ -70,7 +72,7 @@ a {
     line-height: 1.6rem;
     font-weight: 700;
     outline: none !important;
-    background-color: #ef504f;
+    background-color: var(--color);
     padding: 0.675rem 0.8rem;
     position: relative;
     transition: color 0.25s cubic-bezier(0.625, 0.125, 0.305, 0.875),
