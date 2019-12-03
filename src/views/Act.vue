@@ -1,15 +1,7 @@
 <template>
     <v-app>
-        <m-k-top-bar></m-k-top-bar>
-        <v-content class="content">
-            <m-k-card></m-k-card>
-            <m-k-card></m-k-card>
-            <m-k-card></m-k-card>
-            <m-k-card></m-k-card>
-            <m-k-card></m-k-card>
-            <m-k-card></m-k-card>
-            <m-k-card></m-k-card>
-            <m-k-card></m-k-card>
+        <m-k-top-bar :mainColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-top-bar>
+        <v-content class="content" :style="{'--color': this.pageMainColor}">
             <m-k-card></m-k-card>
         </v-content>
     </v-app>
@@ -30,11 +22,13 @@ import MKTimeline from '@/components/MKTimeline.vue'
 export default class Act extends Vue {
     homeTitle: string = 'Kiichi Sugihara'
     homeSubTitle: string = "Solve anyone's problem & fullfill my curiosity"
+    pageMainColor: String = '#FEF2D8'
+    pageTextColor: String = '#4b4b4b'
 }
 </script>
 
 <style lang="scss" scoped>
 .content {
-    background-color: #ef504f;
+    background-color: var(--color);
 }
 </style>
