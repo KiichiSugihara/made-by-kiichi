@@ -1,9 +1,11 @@
 <template>
-    <div class="header-container" :style="{'--color': this.mainColor}">
+    <div
+        class="header-container"
+        :style="{'--color': this.mainColor,'--text-color': this.textColor}"
+    >
         <v-app-bar
             :color="mainColor"
             :flat="flat"
-            dark
             :elevate-on-scroll="elevateOnScroll"
             :shrink-on-scroll="shrinkOnScroll"
             class="m-k-top-bar-header"
@@ -37,6 +39,9 @@ export default class MKTopBar extends Vue {
 
     @Prop({ default: '#ef504f' })
     mainColor!: String
+
+    @Prop({ default: '#ffffff' })
+    textColor!: String
 }
 </script>
 
@@ -45,7 +50,7 @@ export default class MKTopBar extends Vue {
 
 .title-button {
     font-family: 'Mansalva', cursive;
-    color: #ffffff;
+    color: var(--text-color);
 }
 // https://stackoverflow.com/questions/44808474/vue-router-how-to-remove-underline-from-router-link/56443074#56443074
 a {
@@ -66,7 +71,7 @@ a {
 }
 
 .nav-button {
-    color: #ffffff;
+    color: var(--text-color);
     font-family: 'Mansalva', cursive;
     display: block;
     line-height: 1.6rem;
