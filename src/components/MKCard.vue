@@ -1,10 +1,14 @@
 <template>
-    <v-card class="mx-auto mk-card-container" max-width="344">
+    <v-card
+        class="mx-auto mk-card-container"
+        max-width="344"
+        :style="{'--card-color': this.cardColor,'--text-color': this.textColor}"
+    >
         <v-card-text>
-            <div>Word of the Day</div>
-            <p class="display-1">be•nev•o•lent</p>
-            <p>adjective</p>
-            <div class>
+            <div class="text-color">Word of the Day</div>
+            <p class="text-color display-1">be•nev•o•lent</p>
+            <p class="text-color">adjective</p>
+            <div class="text-color">
                 well meaning and kindly.
                 <br />"a benevolent smile"
             </div>
@@ -16,17 +20,23 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
-export default class MKCard extends Vue {}
+export default class MKCard extends Vue {
+    @Prop({ default: '#ef504f' })
+    cardColor!: String
+
+    @Prop({ default: '#ffffff' })
+    textColor!: String
+}
 </script>
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 .mk-card-container {
-    background-color: #ef504f;
+    background-color: var(--card-color);
     max-width: 344px;
     height: 18rem;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 18px 0px;
@@ -34,6 +44,9 @@ export default class MKCard extends Vue {}
     border-radius: 14px;
 }
 .mk-card-action-text {
-    color: #ffffff;
+    color: var(--text-color);
+}
+.text-color {
+    color: var(--text-color);
 }
 </style>>
