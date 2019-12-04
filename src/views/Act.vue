@@ -2,7 +2,7 @@
     <v-app>
         <m-k-top-bar :mainColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-top-bar>
         <v-content class="content" :style="{'--color': this.pageMainColor}">
-            <m-k-card></m-k-card>
+            <m-k-card :cardColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-card>
         </v-content>
     </v-app>
 </template>
