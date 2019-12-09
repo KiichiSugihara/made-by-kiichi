@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue'
 
 import MKCard from '../src/components/MKCard.vue'
 
-storiesOf('MKCard', module).add('simple', () => ({
+storiesOf('MKCard', module).add('MKCard', () => ({
     components: { MKCard },
-    template: `<MKCard msg="Welcome to Your Vue.js + TypeScript + Storybook App"/>`,
+    template: `<MKCard/>`,
 }))
