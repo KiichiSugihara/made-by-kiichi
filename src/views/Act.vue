@@ -5,14 +5,14 @@
             :style="{'--page-main-color': this.pageMainColor,'--page-text-color':this.pageTextColor}"
         >
             <div class="content">
-                <!-- <div class="home-title-container">
-                    <div class="home-title-box">
-                        <h1 class="home-title-text">
-                            <div class="act-text">{{ homeTitle }}</div>
-                            <div class="act-text">{{ homeSubTitle }}</div>
+                <div class="act-title-container">
+                    <div class="act-title-box">
+                        <h1 class="act-title-text">
+                            <div class="act-text">{{ actTitle }}</div>
+                            <div class="act-text">{{ actSubTitle }}</div>
                         </h1>
                     </div>
-                </div>-->
+                </div>
                 <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
                 <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
                 <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
@@ -40,8 +40,8 @@ import MKTimeline from '@/components/MKTimeline.vue'
     },
 })
 export default class Act extends Vue {
-    homeTitle: string = 'Kiichi Sugihara'
-    homeSubTitle: string = "Solve anyone's problem & fullfill my curiosity"
+    actTitle: string = 'Kiichi Sugihara'
+    actSubTitle: string = "Solve anyone's problem & fullfill my curiosity"
     pageMainColor: String = '#ffffff'
     pageTextColor: String = '#4b4b4b'
     cardMainColor: String = '#ef504f'
@@ -55,19 +55,19 @@ export default class Act extends Vue {
     padding: 0 1.5rem;
 }
 
-.home-title-container {
+.act-title-container {
     color: currentColor;
     text-align: center;
     padding: 8rem 0px;
 }
-.home-title-box {
+.act-title-box {
     color: currentColor;
     position: relative;
     max-width: 68rem;
     margin: 0px auto;
     padding: 0px 1.5rem;
 }
-.home-title-text {
+.act-title-text {
     font-family: 'Josefin Sans', sans-serif;
     color: black;
     font-size: 2.6rem;
