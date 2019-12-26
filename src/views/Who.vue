@@ -21,8 +21,8 @@ import MKGitHub from '@/components/MKGitHub.vue'
     },
 })
 export default class Who extends Vue {
-    pageMainColor: String = '#5acd7d'
-    pageTextColor: String = '#4b4b4b'
+    pageMainColor: string = '#5acd7d'
+    pageTextColor: string = '#4b4b4b'
 }
 </script>
 
