@@ -42,10 +42,10 @@ import MKTimeline from '@/components/MKTimeline.vue'
 export default class Act extends Vue {
     actTitle: string = 'Kiichi Sugihara'
     actSubTitle: string = "Solve anyone's problem & fullfill my curiosity"
-    pageMainColor: String = '#ffffff'
-    pageTextColor: String = '#4b4b4b'
-    cardMainColor: String = '#ef504f'
-    cardTextColor: String = '#ffffff'
+    pageMainColor: string = '#ffffff'
+    pageTextColor: string = '#4b4b4b'
+    cardMainColor: string = '#ef504f'
+    cardTextColor: string = '#ffffff'
 }
 </script>
 

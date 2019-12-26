@@ -25,10 +25,10 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 @Component
 export default class MKCard extends Vue {
     @Prop({ default: '#ef504f' })
-    cardColor!: String
+    cardColor!: string
 
     @Prop({ default: '#ffffff' })
-    textColor!: String
+    textColor!: string
 }
 </script>
 

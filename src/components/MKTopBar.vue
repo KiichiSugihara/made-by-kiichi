@@ -38,10 +38,10 @@ export default class MKTopBar extends Vue {
     shrinkOnScroll = true
 
     @Prop({ default: '#ef504f' })
-    mainColor!: String
+    mainColor!: string
 
     @Prop({ default: '#ffffff' })
-    textColor!: String
+    textColor!: string
 }
 </script>
 
