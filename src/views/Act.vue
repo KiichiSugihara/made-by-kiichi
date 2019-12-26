@@ -22,7 +22,7 @@ import MKTimeline from '@/components/MKTimeline.vue'
 export default class Act extends Vue {
     homeTitle: string = 'Kiichi Sugihara'
     homeSubTitle: string = "Solve anyone's problem & fullfill my curiosity"
-    pageMainColor: String = '#FEF2D8'
+    pageMainColor: String = '#ffffff'
     pageTextColor: String = '#4b4b4b'
 }
 </script>
