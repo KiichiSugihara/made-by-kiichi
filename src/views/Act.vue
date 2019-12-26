@@ -3,6 +3,8 @@
         <m-k-top-bar :mainColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-top-bar>
         <v-content class="content" :style="{'--color': this.pageMainColor}">
             <m-k-card :cardColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-card>
+
+            <m-k-work-card :cardColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-work-card>
         </v-content>
     </v-app>
 </template>
@@ -10,12 +12,14 @@
 import { Component, Vue } from 'vue-property-decorator'
 import MKTopBar from '@/components/MKTopBar.vue'
 import MKCard from '@/components/MKCard.vue'
+import MKWorkCard from '@/components/MKWorkCard.vue'
 import MKTimeline from '@/components/MKTimeline.vue'
 
 @Component({
     components: {
         MKTopBar,
         MKCard,
+        MKWorkCard,
         MKTimeline,
     },
 })
