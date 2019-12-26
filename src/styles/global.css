@@ -16,3 +16,12 @@ p {
     -moz-osx-font-smoothing: grayscale;
     font-family: circular web, sans-serif;
 }
+
+a {
+    color: inherit;
+    fill: inherit;
+    font-weight: 600;
+    transition: fill 0.25s cubic-bezier(0.625, 0.125, 0.305, 0.875),
+        color 0.25s cubic-bezier(0.625, 0.125, 0.305, 0.875);
+    text-decoration: none;
+}
