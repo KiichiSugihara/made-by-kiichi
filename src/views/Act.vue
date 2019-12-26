@@ -1,10 +1,26 @@
 <template>
     <v-app>
         <m-k-top-bar :mainColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-top-bar>
-        <v-content class="content" :style="{'--color': this.pageMainColor}">
-            <m-k-card :cardColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-card>
-
-            <m-k-work-card :cardColor="this.pageMainColor" :textColor="this.pageTextColor"></m-k-work-card>
+        <v-content
+            :style="{'--page-main-color': this.pageMainColor,'--page-text-color':this.pageTextColor}"
+        >
+            <div class="content">
+                <!-- <div class="home-title-container">
+                    <div class="home-title-box">
+                        <h1 class="home-title-text">
+                            <div class="act-text">{{ homeTitle }}</div>
+                            <div class="act-text">{{ homeSubTitle }}</div>
+                        </h1>
+                    </div>
+                </div>-->
+                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
+                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
+                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
+                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
+                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
+                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
+                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
+            </div>
         </v-content>
     </v-app>
 </template>
@@ -28,11 +44,41 @@ export default class Act extends Vue {
     homeSubTitle: string = "Solve anyone's problem & fullfill my curiosity"
     pageMainColor: String = '#ffffff'
     pageTextColor: String = '#4b4b4b'
+    cardMainColor: String = '#ef504f'
+    cardTextColor: String = '#ffffff'
 }
 </script>
 
 <style lang="scss" scoped>
 .content {
-    background-color: var(--color);
+    background-color: var(--page-main-color);
+    padding: 0 1.5rem;
+}
+
+.home-title-container {
+    color: currentColor;
+    text-align: center;
+    padding: 8rem 0px;
+}
+.home-title-box {
+    color: currentColor;
+    position: relative;
+    max-width: 68rem;
+    margin: 0px auto;
+    padding: 0px 1.5rem;
+}
+.home-title-text {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.act-text {
+    color: var(--page-text-color);
 }
 </style>
