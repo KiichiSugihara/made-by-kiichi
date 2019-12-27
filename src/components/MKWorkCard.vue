@@ -54,7 +54,8 @@ export default class MKWorkCard extends Vue {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 auto 1.5rem;
-    height: 250px;
+    min-height: 40vw;
+    min-width: height;
     overflow: hidden;
     padding: 0 1.5rem;
     position: relative;
@@ -66,16 +67,19 @@ export default class MKWorkCard extends Vue {
 }
 .mk-work-card__left {
     height: 100%;
-    display: flex;
+    display: contents;
     flex-direction: column;
 }
 
 .mk-work-card__logo {
     margin: 0 auto 0 0;
+    width: 100px;
     padding-top: 1.5rem;
+    position: absolute;
 }
 .mk-work-card__title {
     line-height: 1.3;
+    padding-bottom: 32px;
     margin: auto 0 auto 0;
     transition: -webkit-transform 0.25s;
     -webkit-transition: -webkit-transform 0.25s;
@@ -91,6 +95,8 @@ export default class MKWorkCard extends Vue {
 .mk-work-card__details {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
 }
 
 .mk-work-card__type {
