@@ -1,8 +1,8 @@
 <template>
     <v-app class="page">
         <m-k-top-bar></m-k-top-bar>
-        <v-content
-            ><div class="content">
+        <v-content>
+            <div class="content">
                 <div class="home-title-container">
                     <div class="home-title-box">
                         <h1 class="home-title-text">
@@ -12,7 +12,6 @@
                     </div>
                 </div>
                 <div class="career-container">
-                    Career
                     <m-k-timeline></m-k-timeline>
                 </div>
             </div>

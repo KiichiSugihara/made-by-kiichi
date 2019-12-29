@@ -31,7 +31,7 @@ export default class MKTimeline extends Vue {
     times = [
         {
             color: 'white',
-            time: '2019/09',
+            time: '2020/02',
             title: 'Now',
         },
         {
