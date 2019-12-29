@@ -55,6 +55,7 @@ export default class MKWorkCard extends Vue {
 @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 
 .mk-work-card__item {
+    z-index: 200;
     border-radius: 0.2rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0 1.6rem 4.75rem;
     background-color: var(--card-color);
@@ -78,18 +79,21 @@ export default class MKWorkCard extends Vue {
         -webkit-transform 0.25s cubic-bezier(0.625, 0.125, 0.305, 0.875);
 }
 .mk-work-card__left {
+    z-index: 220;
     height: 100%;
     display: contents;
     flex-direction: column;
 }
 
 .mk-work-card__logo {
+    z-index: 221;
     margin: 0 auto 0 0;
     width: 100px;
     padding-top: 1.5rem;
     position: absolute;
 }
 .mk-work-card__title {
+    z-index: 221;
     line-height: 1.3;
     padding-bottom: 32px;
     margin: auto 0 auto 0;
@@ -105,6 +109,7 @@ export default class MKWorkCard extends Vue {
 }
 
 .mk-work-card__details {
+    z-index: 221;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -112,9 +117,11 @@ export default class MKWorkCard extends Vue {
 }
 
 .mk-work-card__type {
+    z-index: 221;
     margin-bottom: 0.2rem;
 }
 .mk-work-card__img {
+    z-index: 210;
     background: left center no-repeat;
     background-size: cover;
     border-top-right-radius: inherit;
