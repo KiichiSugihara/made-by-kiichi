@@ -69,7 +69,7 @@ export default class Act extends Vue {
                 'https://scrapbox.io/kii-cafe/Facebook_Developer_Build_Day',
             logoSrc: '',
             imageSrc:
-                'https://i.gyazo.com/d651082e2134a2aad22e1db5b734942b.png',
+                'https://i.gyazo.com/f407c31b217aac6e0cd4171092d53a8c.png',
             projectTitle: 'Facebook Developer Build Day',
             projectType: 'Sakura Internet Award',
             projectGenre: 'Hackathon/Presentation',
