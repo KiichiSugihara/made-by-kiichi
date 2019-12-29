@@ -13,13 +13,18 @@
                         </h1>
                     </div>
                 </div>
-                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
-                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
-                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
-                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
-                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
-                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
-                <m-k-work-card :cardColor="this.cardMainColor" :textColor="this.cardTextColor"></m-k-work-card>
+                <m-k-work-card
+                    v-for="card in cards"
+                    :key="card.id"
+                    :cardColor="card.cardMainColor"
+                    :textColor="card.cardTextColor"
+                    :cardLink="card.cardLink"
+                    :logoSrc="card.logoSrc"
+                    :imageSrc="card.imageSrc"
+                    :projectTitle="card.projectTitle"
+                    :projectType="card.projectType"
+                    :projectGenre="card.projectGenre"
+                ></m-k-work-card>
             </div>
         </v-content>
     </v-app>
@@ -44,8 +49,32 @@ export default class Act extends Vue {
     actSubTitle: string = "Solve anyone's problem & fullfill my curiosity"
     pageMainColor: string = '#ffffff'
     pageTextColor: string = '#4b4b4b'
-    cardMainColor: string = '#ef504f'
-    cardTextColor: string = '#ffffff'
+
+    cards = [
+        {
+            cardMainColor: '#ef504f',
+            cardTextColor: '#ffffff',
+            cardLink: 'https://scrapbox.io/kii-cafe/made-by-kiichi',
+            logoSrc: 'https://i.gyazo.com/489624ddd639471af9932e6055b3d0c6.png',
+            imageSrc:
+                'https://i.gyazo.com/be152af9f5c274b5b8c73056773ea771.png',
+            projectTitle: 'Made by kiichi',
+            projectType: 'Portfolio Site in English',
+            projectGenre: 'Vue.js/TypeScript/Render',
+        },
+        {
+            cardMainColor: '#1877F2',
+            cardTextColor: '#ffffff',
+            cardLink:
+                'https://scrapbox.io/kii-cafe/Facebook_Developer_Build_Day',
+            logoSrc: '',
+            imageSrc:
+                'https://i.gyazo.com/d651082e2134a2aad22e1db5b734942b.png',
+            projectTitle: 'Facebook Developer Build Day',
+            projectType: 'Sakura Internet Award',
+            projectGenre: 'Hackathon/Presentation',
+        },
+    ]
 }
 </script>
 

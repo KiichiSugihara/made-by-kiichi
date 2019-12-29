@@ -1,28 +1,21 @@
 <template>
     <a
-        href="https://scrapbox.io/kii-cafe/made-by-kiichi"
+        :href="this.cardLink"
         class="mk-work-card__item"
         data-history="project"
         target="_blank"
         :style="{'--card-color': this.cardColor,'--text-color': this.textColor}"
     >
         <div class="mk-work-card__left">
-            <img
-                class="mk-work-card__logo"
-                title="The Economist logo"
-                src="https://i.gyazo.com/489624ddd639471af9932e6055b3d0c6.png"
-            />
-            <h2 class="mk-work-card__title">Project Title</h2>
+            <img class="mk-work-card__logo" :src="this.logoSrc" />
+            <h2 class="mk-work-card__title">{{ projectTitle }}</h2>
             <p class="mk-work-card__details">
-                <span class="mk-work-card__type">Project Type</span>
-                <span class="mk-work-card__genre">hogehoge</span>
+                <span class="mk-work-card__type">{{ projectType }}</span>
+                <span class="mk-work-card__genre">{{ projectGenre }}</span>
             </p>
         </div>
         <div class="mk-work-card__right">
-            <img
-                class="mk-work-card__img"
-                src="https://i.gyazo.com/be152af9f5c274b5b8c73056773ea771.png"
-            />
+            <img class="mk-work-card__img" :src="this.imageSrc" />
         </div>
     </a>
 </template>
@@ -32,11 +25,29 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
 export default class MKWorkCard extends Vue {
-    @Prop({ default: '#ef504f' })
+    @Prop({})
     cardColor!: string
 
-    @Prop({ default: '#ffffff' })
+    @Prop({})
     textColor!: string
+
+    @Prop({})
+    cardLink!: string
+
+    @Prop({})
+    logoSrc!: string
+
+    @Prop({})
+    imageSrc!: string
+
+    @Prop({ default: 'Project Title' })
+    projectTitle!: string
+
+    @Prop({ default: 'Project Type' })
+    projectType!: string
+
+    @Prop({ default: 'Project Genre' })
+    projectGenre!: string
 }
 </script>
 
@@ -112,6 +123,5 @@ export default class MKWorkCard extends Vue {
     position: absolute;
     right: 0;
     top: 0;
-    // width: 66.6%;
 }
 </style>>
