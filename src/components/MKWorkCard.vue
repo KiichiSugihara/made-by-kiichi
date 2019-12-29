@@ -3,6 +3,7 @@
         href="https://scrapbox.io/kii-cafe/made-by-kiichi"
         class="mk-work-card__item"
         data-history="project"
+        target="_blank"
         :style="{'--card-color': this.cardColor,'--text-color': this.textColor}"
     >
         <div class="mk-work-card__left">
