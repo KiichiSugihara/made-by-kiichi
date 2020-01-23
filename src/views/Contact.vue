@@ -1,9 +1,15 @@
 <template>
     <v-app>
-        <m-k-top-bar></m-k-top-bar>
-        <v-content class="content">
-            <h1>Contact</h1>
-            <h2>Go to Google Sheet!</h2>
+        <m-k-top-bar
+            :mainColor="this.pageMainColor"
+            :textColor="this.pageTextColor"
+        ></m-k-top-bar>
+        <v-content
+            :style="{
+                '--page-main-color': this.pageMainColor,
+                '--page-text-color': this.pageTextColor,
+            }"
+        >
         </v-content>
     </v-app>
 </template>
@@ -20,11 +26,10 @@ import MKTimeline from '@/components/MKTimeline.vue'
         MKTimeline,
     },
 })
-export default class Contact extends Vue {}
+export default class Contact extends Vue {
+    pageMainColor: string = '#ffffff'
+    pageTextColor: string = '#4b4b4b'
+}
 </script>
 
-<style lang="scss" scoped>
-.content {
-    background-color: #ef504f;
-}
-</style>
+<style lang="scss" scoped></style>
